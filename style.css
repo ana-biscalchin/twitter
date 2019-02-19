@@ -1,0 +1,56 @@
+body {
+    background-color: #E6EAEE;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+.insert {
+    display: block;
+    justify-content: center;
+    position: relative;
+    background-color: #ffffff;
+    height: auto;
+    width: 40%;
+    border: #E6EAEE solid;
+}
+
+#text_box {
+    border-radius: 50px;
+    border: transparent;
+    width: auto;
+    height: auto;
+    background-color: #E6EAEE;
+    color: #7D8292;
+    font-size: 15px;
+}
+
+button {
+    display: inline;
+    align-content: right;
+    justify-content: flex-start;
+    border: transparent;
+    background-color: #5C91F1;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    color: #ffffff;
+}
+
+button:hover {
+    display: inline;
+    align-content: right;
+    justify-content: flex-start;
+    background-color: #5C91F1;
+    border-radius: 10px;
+    border: transparent;
+    width: auto;
+    height: auto;
+    color: #ffffff;
+    background-color: #ADC8F8;
+}
+
+#publish {
+    background-color: #ffffff;
+    width: 40%;
+    height: auto;
+}
