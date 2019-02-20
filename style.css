@@ -4,31 +4,51 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
 }
 
-.insert {
-    display: block;
-    justify-content: center;
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    background-color: white;
+    width: 100%;
+}
+
+#insert {
     position: relative;
+    display: flex;
+    height: 300px;
+    width: 700px;
+    margin-top: 120px;
+    margin-left: 400px;
+    align-items: center;
+    justify-content: center;
     background-color: #ffffff;
-    height: auto;
-    width: 40%;
-    border: #E6EAEE solid;
+}
+
+.insert-msg {
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-top: solid #7D8292;
+    border-bottom: solid #7D8292;
 }
 
 #text_box {
-    border-radius: 50px;
     border: transparent;
-    width: auto;
-    height: auto;
+    border-radius: 50px;
+    width: 522px;
+    height: 110px;
+    text-align: inherit;
     background-color: #E6EAEE;
     color: #7D8292;
     font-size: 15px;
+    border-bottom-color: rgb(29, 161, 242)
 }
 
 button {
-    display: inline;
-    align-content: right;
-    justify-content: flex-start;
-    border: transparent;
+    border: none;
     background-color: #5C91F1;
     border-radius: 10px;
     width: auto;
@@ -36,21 +56,39 @@ button {
     color: #ffffff;
 }
 
-button:hover {
-    display: inline;
-    align-content: right;
-    justify-content: flex-start;
-    background-color: #5C91F1;
+
+/* button.disable {
     border-radius: 10px;
     border: transparent;
     width: auto;
     height: auto;
     color: #ffffff;
     background-color: #ADC8F8;
+}*/
+
+.counter-color {
+    color: black;
+}
+
+.counter-color-blue {
+    color: blue;
+}
+
+.counter-color-red {
+    color: red;
 }
 
 #publish {
+    height: 300px;
+    width: 700px;
+    align-items: center;
+    justify-content: center;
     background-color: #ffffff;
-    width: 40%;
-    height: auto;
+    color: black;
+}
+
+#publish div {
+    display: block;
+    border-top: solid #7D8292;
+    border-bottom: solid #7D8292;
 }

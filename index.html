@@ -9,19 +9,27 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
 
 </head>
-<nav>
-    <img src="/home/ana/lab/twitter/nav.png" alt="">
-</nav>
+<header>
+    <nav>
+        <img src="/home/ana/lab/twitter/nav.png" alt="">
+    </nav>
+</header>
 
-<body onLoad="disableButton();">
-    <div class="insert">
+<body onload="disabledButton()">
+    <section id="insert">
+        <div class="insert-msg">
+            <input id="text_box" type="text" placeholder="O que está acontecendo?" />
+            <button id="tweet" type="button">Tweet</button>
+            <div id="counter" class="counter-color"></div>
 
-        <input id="text_box" type="text" placeholder="O que está acontecendo?" required/>
-        <button id="tweet" type="button">Tweet</button>
-    </div>
+        </div>
+    </section>
+
 
     <section id="publish">
+
     </section>
+
     <script src="script.js"></script>
 
 </body>
