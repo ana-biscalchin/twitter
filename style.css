@@ -1,7 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
     background-color: #E6EAEE;
     color: black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -14,54 +22,51 @@ nav {
 }
 
 #insert {
-    position: relative;
     height: auto;
-    width: 700px;
+    width: auto;
     margin-top: 120px;
-    margin-left: 400px;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
+    margin-left: 352px;
+    margin-right: 10px;
 }
 
 .insert-msg {
-    position: absolute;
-    width: 600px;
+    width: auto;
     height: auto;
-    padding: 10px;
     background-color: #ffffff;
-    border-top: solid #7D8292;
-    border-bottom: solid #7D8292;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 #text_box {
-    border: transparent;
-    border-radius: 10px;
-    width: 522px;
+    border-radius: 7px;
+    border-bottom: 0.5px solid;
+    border-bottom-color: rgb(29, 161, 242);
+    width: 90%;
+    height: 19px;
     background-color: #E6EAEE;
     color: #7D8292;
     font-size: 15px;
-    border-bottom-color: rgb(29, 161, 242);
     overflow: hidden;
     resize: none;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .button {
     border: none;
     background-color: #5C91F1;
-    border-radius: 10px;
+    border-radius: 25px;
     width: auto;
     height: auto;
     color: #ffffff;
+    font-size: 20px;
+    padding: 2%;
 }
 
 .button:disabled {
-    border-radius: 10px;
-    border: transparent;
-    width: auto;
-    height: auto;
     color: #ffffff;
-    background-color: pink;
+    background-color: #ADC8F8;
 }
 
 .counter {
@@ -76,17 +81,47 @@ nav {
     color: red;
 }
 
+aside div {
+    padding: 10px;
+    margin-top: 120px;
+    width: 360px;
+    height: 330px;
+    background-color: #ffffff;
+}
+
+.division {
+    background-color: #ffffff;
+    border-bottom: 0.3px solid #e0dcdc;
+}
+
+.text-boxes {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+}
+
 #publish {
-    height: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
     width: 700px;
-    align-items: center;
-    justify-content: center;
+    margin-top: 10px;
     background-color: #ffffff;
     color: black;
+    padding: 20px;
 }
 
 #publish div {
     display: block;
-    border-top: solid #7D8292;
-    border-bottom: solid #7D8292;
+    border-top: 0.3px solid #7D8292;
+    border-bottom: 0.3px solid #7D8292;
+    padding: 20px;
+    margin: 20px;
+}
+
+#publish p {
+    word-break: break-word;
+    word-wrap: break-word;
+    white-space: pre-wrap;
 }

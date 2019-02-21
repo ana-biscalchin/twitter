@@ -5,7 +5,7 @@ let textArea = document.getElementById("text_box")
 tweetBtn.addEventListener("click", pegarMsg);
 textArea.addEventListener("keydown", count);
 textArea.addEventListener("keydown", verifica);
-textArea.addEventListener("keydown", resize);
+textArea.addEventListener("keyup", resize);
 
 function message() {
     let msg = document.getElementById("text_box").value;
@@ -21,33 +21,29 @@ function verifica() {
     }
 }
 
-function publishHour() {
-    let hour = moment().format('LTS');
-    console.log(hour)
-    let newDivHour = document.createElement("div");
-    document.getElementById("publish").appendChild(newDivHour);
-}
-
 function pegarMsg() {
 
     let newDiv = document.createElement("div");
     let newParagraph = document.createElement("p");
     let text = document.createTextNode(message());
 
+    let newParagHour = document.createElement("p");
+    let hour = document.createTextNode(moment().format('LTS'));
+
+    newDiv.appendChild(newParagHour);
+    newParagHour.appendChild(hour);
+
     newDiv.appendChild(newParagraph);
     newParagraph.appendChild(text);
 
     document.getElementById("publish").appendChild(newDiv);
-    publishHour();
     reset();
 }
 
 function count() {
     let countFinal = 140 - message().length;
 
-    if (countFinal <= 140 & countFinal >= 0) {
-        counter.classList.add("counter-color");
-    } else if (countFinal < 20 & countFinal > 10) {
+    if (countFinal < 20 & countFinal > 10) {
         counter.classList.add("counter-color-blue");
     } else if (countFinal < 10) {
         counter.classList.add("counter-color-red");
@@ -64,6 +60,6 @@ function reset() {
 }
 
 function resize() {
-    textArea.style.cssText = 'height:auto; padding:0';
+    textArea.style.cssText = 'height:auto;';
     textArea.style.cssText = 'height:' + textArea.scrollHeight + 'px';
 }
