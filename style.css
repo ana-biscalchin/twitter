@@ -42,7 +42,7 @@ nav {
     border-radius: 7px;
     border-bottom: 0.5px solid;
     border-bottom-color: rgb(29, 161, 242);
-    width: 90%;
+    width: 95%;
     height: 19px;
     background-color: #E6EAEE;
     color: #7D8292;
@@ -54,6 +54,8 @@ nav {
 }
 
 .button {
+    float: right;
+    margin: 10px;
     border: none;
     background-color: #5C91F1;
     border-radius: 25px;
@@ -70,6 +72,8 @@ nav {
 }
 
 .counter {
+    padding: 10px;
+    text-align: right;
     color: black;
 }
 
