@@ -19,4 +19,4 @@ Foi feito:
  - se o número de caracteres digitados (sem dar um "enter") excederem o tamanho da área de texto por padrão, mais uma linha é adicionada para que a rolagem não apareça. (Se aplicável)
  - mostra a hora de publicação.
  
- ![Twitter Website](scr/twiiter.png)
+ ![Twitter Website](scr/twitter.png)
