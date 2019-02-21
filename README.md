@@ -2,7 +2,7 @@
 
 Neste desafio, replico o feed de notícias do Twitter. 
  
- 
+
 Foi feito: 
 - formulário que permita inserir um texto e um botão para "twittar";
 - evento de click ao botão do formulário;
