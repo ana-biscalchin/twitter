@@ -15,8 +15,7 @@ nav {
 
 #insert {
     position: relative;
-    display: flex;
-    height: 300px;
+    height: auto;
     width: 700px;
     margin-top: 120px;
     margin-left: 400px;
@@ -28,7 +27,7 @@ nav {
 .insert-msg {
     position: absolute;
     width: 600px;
-    height: 200px;
+    height: auto;
     padding: 10px;
     background-color: #ffffff;
     border-top: solid #7D8292;
@@ -37,17 +36,17 @@ nav {
 
 #text_box {
     border: transparent;
-    border-radius: 50px;
+    border-radius: 10px;
     width: 522px;
-    height: 110px;
-    text-align: inherit;
     background-color: #E6EAEE;
     color: #7D8292;
     font-size: 15px;
-    border-bottom-color: rgb(29, 161, 242)
+    border-bottom-color: rgb(29, 161, 242);
+    overflow: hidden;
+    resize: none;
 }
 
-button {
+.button {
     border: none;
     background-color: #5C91F1;
     border-radius: 10px;
@@ -56,17 +55,16 @@ button {
     color: #ffffff;
 }
 
-
-/* button.disable {
+.button:disabled {
     border-radius: 10px;
     border: transparent;
     width: auto;
     height: auto;
     color: #ffffff;
-    background-color: #ADC8F8;
-}*/
+    background-color: pink;
+}
 
-.counter-color {
+.counter {
     color: black;
 }
 
