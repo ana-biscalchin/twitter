@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Twitter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-
-
-</head>
-<header>
-    <nav>
-        <img src="src/nav.png" alt="">
-    </nav>
-</header>
-
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="src/nav.png" alt="" />
+      </nav>
+    </header>
     <main id="insert">
-        <div class="division">
-            <p class="text-boxes">Página inicial</p>
-        </div>
-        <div class="insert-msg">
-            <button id="tweet" class="button" disabled="true" type="button">Tweet</button>
-            <textarea id="text_box" rows="2" type="textarea" placeholder="O que está acontecendo?" rows="1" keydown></textarea>
-            <div id="counter" class="counter"></div>
-        </div>
-
-        <section id="publish">
-        </section>
+      <section class="division">
+        <span class="text-boxes">Página inicial</span>
+      </section>
+      <section class="insert-msg">
+        <button id="tweet" class="button" disabled="true" type="button">
+          Tweet
+        </button>
+        <textarea
+          id="text_box"
+          rows="2"
+          type="textarea"
+          placeholder="O que está acontecendo?"
+          rows="1"
+          keydown
+        ></textarea>
+        <div id="counter" class="counter"></div>
+      </section>
+      <section id="publish"></section>
     </main>
     <aside>
-        <div>
-            <p class="text-boxes">Quem seguir</p>
-            <img src="src/quem.png" alt="">
-
-        </div>
+      <div>
+        <p class="text-boxes">Quem seguir</p>
+        <img src="src/quem.png" alt="" />
+      </div>
     </aside>
-
-
     <script src="script.js"></script>
     <script src="moment.js"></script>
-</body>
-
+  </body>
 </html>
